@@ -1,13 +1,9 @@
 {
-  "name": "@paulrberg/solidity-template",
-  "description": "To be used when building a new solidity project from scratch",
+  "name": "yearn-buidler-starter",
+  "description": "Starter pack for yearn using buidler",
   "version": "1.0.0",
   "author": {
-    "name": "Paul Razvan Berg",
-    "url": "https://paulrberg.com"
-  },
-  "bugs": {
-    "url": "https://github.com/paulrberg/solidity-template/issues"
+    "name": "Doug Molina"
   },
   "devDependencies": {
     "@commitlint/cli": "^9.0.1",
@@ -18,6 +14,7 @@
     "@nomiclabs/buidler": "^1.3.8",
     "@nomiclabs/buidler-ethers": "^2.0.0",
     "@nomiclabs/buidler-waffle": "^2.0.0",
+    "@openzeppelin/contracts": "2.5.1",
     "@typechain/ethers-v5": "^0.0.2",
     "@types/chai": "^4.2.11",
     "@types/fs-extra": "^9.0.1",
@@ -65,7 +62,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/paulrberg/solidity-template"
+    "url": "https://github.com/dmolina79/yearn-buidler-starter"
   },
   "scripts": {
     "build": "yarn run compile && yarn run typechain",
@@ -79,5 +76,6 @@
     "prettier:list-different": "prettier --config .prettierrc --list-different '**/*.{js,json,md,sol,ts}'",
     "test": "buidler test",
     "typechain": "buidler typechain"
-  }
+  },
+  "dependencies": {}
 }
